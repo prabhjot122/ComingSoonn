@@ -1,0 +1,33 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply text-custom-text;
+    font-family: '"Times New Roman"', serif;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+        url('/Gemini_Generated_Image_y8pkvfy8pkvfy8pk.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+@keyframes golden-gradient-slow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.golden-gradient-slow {
+    animation: golden-gradient-slow 8s ease-in-out infinite;
+}
